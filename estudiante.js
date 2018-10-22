@@ -4,6 +4,11 @@ document.getElementById("mostrarPromedio").addEventListener("click", mostrarProm
 document.getElementById("mostrarNotaMayor").addEventListener("click", mostrarNotaMayor);
 document.getElementById("mostrarNotaMenor").addEventListener("click", mostrarNotaMenor);
 
+
+// ----------------------------------------------------
+// ----------------------------------------------------
+
+
 function estudiante (){
 	guardarEstudiante();
 	mostrarEstudiante();
@@ -16,12 +21,13 @@ function estudiante (){
 
 function guardarEstudiante(){
 
-	var sCodigo = document.querySelector("#codigo").value,
-		sNombre = document.querySelector("#nombre").value,
-		nNota = document.querySelector("#nota").value;
+	var sCodigo = document.getElementById("codigo").value,
+		sNombre = document.getElementById("nombre").value,
+		nNota = document.getElementById("nota").value;
 
 	registrarEstudiante(sCodigo, sNombre, nNota);
 }
+
 
 function mostrarEstudiante (){
 
